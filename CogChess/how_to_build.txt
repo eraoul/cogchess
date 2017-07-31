@@ -1,0 +1,2 @@
+clang++ -o perft -O3 -std=c++11 bitboard.cpp board.cpp consts.cpp fen.cpp genmove.cpp perft.cpp pystring.cpp types.cpp 
+

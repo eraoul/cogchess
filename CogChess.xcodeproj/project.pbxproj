@@ -7,7 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075A78331C3710BA00FE14D1 /* fen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075A78321C3710BA00FE14D1 /* fen.cpp */; };
+		075FDAC61C44947B0062EFD1 /* uci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075FDAC41C44947B0062EFD1 /* uci.cpp */; };
+		075FDAC91C44F41B0062EFD1 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075FDAC71C44F41B0062EFD1 /* thread.cpp */; };
+		075FDACC1C457BFE0062EFD1 /* search.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075FDACA1C457BFE0062EFD1 /* search.cpp */; };
+		075FDACF1C47863D0062EFD1 /* pystring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075FDACD1C47863D0062EFD1 /* pystring.cpp */; };
 		07F9B7A71C361A62002D0C28 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07F9B7A61C361A62002D0C28 /* main.cpp */; };
+		07FD638A1C392B74001E04F2 /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63891C392B74001E04F2 /* board.cpp */; };
+		07FD638F1C39BF0F001E04F2 /* genmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD638D1C39BF0F001E04F2 /* genmove.cpp */; };
+		07FD63931C39D3FA001E04F2 /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63911C39D3FA001E04F2 /* bitboard.cpp */; };
+		07FD63961C39DFAF001E04F2 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63951C39DFAF001E04F2 /* types.cpp */; };
+		07FD63991C3A3F13001E04F2 /* consts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63971C3A3F13001E04F2 /* consts.cpp */; };
+		07FD63A51C3F7E51001E04F2 /* bitboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63911C39D3FA001E04F2 /* bitboard.cpp */; };
+		07FD63A61C3F7E51001E04F2 /* board.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63891C392B74001E04F2 /* board.cpp */; };
+		07FD63A71C3F7E51001E04F2 /* consts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63971C3A3F13001E04F2 /* consts.cpp */; };
+		07FD63A81C3F7E51001E04F2 /* genmove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD638D1C39BF0F001E04F2 /* genmove.cpp */; };
+		07FD63A91C3F7E51001E04F2 /* types.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63951C39DFAF001E04F2 /* types.cpp */; };
+		07FD63AB1C3F7E7B001E04F2 /* perft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07FD63AA1C3F7E7B001E04F2 /* perft.cpp */; };
+		07FD63AD1C3F8A68001E04F2 /* fen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 075A78321C3710BA00FE14D1 /* fen.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -20,15 +37,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		07FD639C1C3F7E2C001E04F2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0743D1361C390CFF00A68C9E /* board.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = board.h; sourceTree = "<group>"; };
+		075A78321C3710BA00FE14D1 /* fen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fen.cpp; sourceTree = "<group>"; };
+		075A78341C3710C300FE14D1 /* types.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = types.h; sourceTree = "<group>"; };
+		075FDAC41C44947B0062EFD1 /* uci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = uci.cpp; sourceTree = "<group>"; };
+		075FDAC51C44947B0062EFD1 /* uci.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = uci.h; sourceTree = "<group>"; };
+		075FDAC71C44F41B0062EFD1 /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		075FDAC81C44F41B0062EFD1 /* thread.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = thread.h; sourceTree = "<group>"; };
+		075FDACA1C457BFE0062EFD1 /* search.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = search.cpp; sourceTree = "<group>"; };
+		075FDACB1C457BFE0062EFD1 /* search.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = search.h; sourceTree = "<group>"; };
+		075FDACD1C47863D0062EFD1 /* pystring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pystring.cpp; path = CogChess/pystring.cpp; sourceTree = "<group>"; };
+		075FDACE1C47863D0062EFD1 /* pystring.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = pystring.h; path = CogChess/pystring.h; sourceTree = "<group>"; };
 		07F9B7A31C361A62002D0C28 /* CogChess */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CogChess; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F9B7A61C361A62002D0C28 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		07FD63891C392B74001E04F2 /* board.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = board.cpp; sourceTree = "<group>"; };
+		07FD638D1C39BF0F001E04F2 /* genmove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genmove.cpp; sourceTree = "<group>"; };
+		07FD638E1C39BF0F001E04F2 /* genmove.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = genmove.h; sourceTree = "<group>"; };
+		07FD63901C39CDF7001E04F2 /* .clang-format */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ".clang-format"; sourceTree = "<group>"; };
+		07FD63911C39D3FA001E04F2 /* bitboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bitboard.cpp; sourceTree = "<group>"; };
+		07FD63921C39D3FA001E04F2 /* bitboard.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = bitboard.h; sourceTree = "<group>"; };
+		07FD63951C39DFAF001E04F2 /* types.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = types.cpp; sourceTree = "<group>"; };
+		07FD63971C3A3F13001E04F2 /* consts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = consts.cpp; sourceTree = "<group>"; };
+		07FD63981C3A3F13001E04F2 /* consts.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = consts.h; sourceTree = "<group>"; };
+		07FD639E1C3F7E2C001E04F2 /* perft */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = perft; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FD63AA1C3F7E7B001E04F2 /* perft.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = perft.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		07F9B7A01C361A62002D0C28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FD639B1C3F7E2C001E04F2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +96,8 @@
 		07F9B79A1C361A62002D0C28 = {
 			isa = PBXGroup;
 			children = (
+				07FD63901C39CDF7001E04F2 /* .clang-format */,
+				07FD638B1C392B89001E04F2 /* pystring */,
 				07F9B7A51C361A62002D0C28 /* CogChess */,
 				07F9B7A41C361A62002D0C28 /* Products */,
 			);
@@ -50,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				07F9B7A31C361A62002D0C28 /* CogChess */,
+				07FD639E1C3F7E2C001E04F2 /* perft */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +115,36 @@
 		07F9B7A51C361A62002D0C28 /* CogChess */ = {
 			isa = PBXGroup;
 			children = (
+				07FD63921C39D3FA001E04F2 /* bitboard.h */,
+				07FD63911C39D3FA001E04F2 /* bitboard.cpp */,
+				0743D1361C390CFF00A68C9E /* board.h */,
+				07FD63891C392B74001E04F2 /* board.cpp */,
+				07FD63981C3A3F13001E04F2 /* consts.h */,
+				07FD63971C3A3F13001E04F2 /* consts.cpp */,
+				075A78321C3710BA00FE14D1 /* fen.cpp */,
+				07FD638D1C39BF0F001E04F2 /* genmove.cpp */,
+				07FD638E1C39BF0F001E04F2 /* genmove.h */,
 				07F9B7A61C361A62002D0C28 /* main.cpp */,
+				07FD63AA1C3F7E7B001E04F2 /* perft.cpp */,
+				075FDACB1C457BFE0062EFD1 /* search.h */,
+				075FDACA1C457BFE0062EFD1 /* search.cpp */,
+				075A78341C3710C300FE14D1 /* types.h */,
+				07FD63951C39DFAF001E04F2 /* types.cpp */,
+				075FDAC51C44947B0062EFD1 /* uci.h */,
+				075FDAC41C44947B0062EFD1 /* uci.cpp */,
+				075FDAC81C44F41B0062EFD1 /* thread.h */,
+				075FDAC71C44F41B0062EFD1 /* thread.cpp */,
 			);
 			path = CogChess;
+			sourceTree = "<group>";
+		};
+		07FD638B1C392B89001E04F2 /* pystring */ = {
+			isa = PBXGroup;
+			children = (
+				075FDACD1C47863D0062EFD1 /* pystring.cpp */,
+				075FDACE1C47863D0062EFD1 /* pystring.h */,
+			);
+			name = pystring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +167,23 @@
 			productReference = 07F9B7A31C361A62002D0C28 /* CogChess */;
 			productType = "com.apple.product-type.tool";
 		};
+		07FD639D1C3F7E2C001E04F2 /* perft */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FD63A21C3F7E2C001E04F2 /* Build configuration list for PBXNativeTarget "perft" */;
+			buildPhases = (
+				07FD639A1C3F7E2C001E04F2 /* Sources */,
+				07FD639B1C3F7E2C001E04F2 /* Frameworks */,
+				07FD639C1C3F7E2C001E04F2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = perft;
+			productName = perft;
+			productReference = 07FD639E1C3F7E2C001E04F2 /* perft */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +194,9 @@
 				ORGANIZATIONNAME = "Eric Nichols";
 				TargetAttributes = {
 					07F9B7A21C361A62002D0C28 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					07FD639D1C3F7E2C001E04F2 = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -109,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				07F9B7A21C361A62002D0C28 /* CogChess */,
+				07FD639D1C3F7E2C001E04F2 /* perft */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +225,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F9B7A71C361A62002D0C28 /* main.cpp in Sources */,
+				07FD63961C39DFAF001E04F2 /* types.cpp in Sources */,
+				07FD63931C39D3FA001E04F2 /* bitboard.cpp in Sources */,
+				07FD638A1C392B74001E04F2 /* board.cpp in Sources */,
+				075A78331C3710BA00FE14D1 /* fen.cpp in Sources */,
+				07FD63991C3A3F13001E04F2 /* consts.cpp in Sources */,
+				075FDAC61C44947B0062EFD1 /* uci.cpp in Sources */,
+				075FDACF1C47863D0062EFD1 /* pystring.cpp in Sources */,
+				07FD638F1C39BF0F001E04F2 /* genmove.cpp in Sources */,
+				075FDAC91C44F41B0062EFD1 /* thread.cpp in Sources */,
+				075FDACC1C457BFE0062EFD1 /* search.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FD639A1C3F7E2C001E04F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FD63A51C3F7E51001E04F2 /* bitboard.cpp in Sources */,
+				07FD63A81C3F7E51001E04F2 /* genmove.cpp in Sources */,
+				07FD63A71C3F7E51001E04F2 /* consts.cpp in Sources */,
+				07FD63A61C3F7E51001E04F2 /* board.cpp in Sources */,
+				07FD63AD1C3F8A68001E04F2 /* fen.cpp in Sources */,
+				07FD63A91C3F7E51001E04F2 /* types.cpp in Sources */,
+				07FD63AB1C3F7E7B001E04F2 /* perft.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +344,21 @@
 		07F9B7AC1C361A62002D0C28 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = fast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		07FD63A31C3F7E2C001E04F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		07FD63A41C3F7E2C001E04F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +382,16 @@
 				07F9B7AC1C361A62002D0C28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FD63A21C3F7E2C001E04F2 /* Build configuration list for PBXNativeTarget "perft" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FD63A31C3F7E2C001E04F2 /* Debug */,
+				07FD63A41C3F7E2C001E04F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
