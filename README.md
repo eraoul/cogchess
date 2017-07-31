@@ -8,7 +8,7 @@ A "perft" program is included to verify that move generation and tree search wor
 
 Build perft as follows:
 
-clang++ -o perft -O3 -std=c++11 bitboard.cpp board.cpp consts.cpp fen.cpp genmove.cpp perft.cpp pystring.cpp types.cpp 
+    clang++ -o perft -O3 -std=c++11 bitboard.cpp board.cpp consts.cpp fen.cpp genmove.cpp perft.cpp pystring.cpp types.cpp 
 
 ## Engine
 A UCI chess engine is also included. Build rules will follow once it is complete; at present it has some bugs in the alpha-beta search.
