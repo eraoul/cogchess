@@ -13,4 +13,8 @@ Build perft as follows:
 ## Engine
 A UCI chess engine is also included. Build rules will follow once it is complete; at present it has some bugs in the alpha-beta search.
 
+Build:
+
+    TODO
+    
 Eventually the plan is to integrate the basic move generation logic here with a cognitively-inspired main engine, instead of using brute-force search. 
