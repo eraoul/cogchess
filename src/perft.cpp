@@ -51,7 +51,9 @@ int main(int argc, const char* argv[]) {
     // Perft pos 4.  CORRECT through depth 6
     // board.set_fen("r3k2r/Pppp1ppp/1b3nbN/nP6/BBP1P3/q4N2/Pp1P2PP/R2Q1RK1 w kq - 0 1");
 
+
     // Perft pos 4b (reversed)  CORRECT through depth 5
+    // Used to have errors at depth 4; this caught some tricky bugs.
 
     // board.set_fen("r2q1rk1/pP1p2pp/Q4n2/bbp1p3/Np6/1B3NBn/pPPP1PPP/R3K2R b KQ - 0 1");
 
@@ -59,7 +61,8 @@ int main(int argc, const char* argv[]) {
     // Perft 1: 6 / 0 / 0 / 0
     // Perft 2: 264 / 0 / 6 / 48
     // Perft 3: 9467 / 4 / 0 / 120
-    // Perft 4: 422333 (*got 424005) / 0 / 7795 / 60032 (*got 61704)
+    // Perft 4: 422333 / 0 / 7795 / 60032
+    // Perft 5: 15833292 / 6512 / 0 / 329464
 
 
     // Perft pos 5. CORRECT through depth 5.
@@ -94,7 +97,7 @@ int main(int argc, const char* argv[]) {
     // dad vs computer a2a3
     // board.set_fen("r3kb1r/2pq4/ppnpNn2/1Q2p3/7p/2N3B1/PPP1PPPP/1K1R1B1R b kq - 0 15");
 
-    // Hangs program in alpha-beta.
+    // TODO: The following position hangs program in alpha-beta.
     board.set_fen("3rr3/ppp4p/2n2n1k/2q5/6b1/1P4P1/P4PKP/1q4NR w - - 2 21");
 
     board.print();
